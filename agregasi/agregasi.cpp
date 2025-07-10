@@ -15,3 +15,5 @@ int main()
     anak *varAnak3 = new anak ("Dewi");
 
     varIbu->tambahAnak (varAnak1);
+     varIbu->tambahAnak (varAnak2); // Add anak objects to ibu 'dini'
+    varIbu2->tambahAnak (varAnak3);
