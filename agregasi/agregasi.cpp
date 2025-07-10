@@ -20,3 +20,7 @@ int main()
      varIbu2->tambahAnak (varAnak1); // Demonstrate one child can have multiple mothers
 
     varIbu->cetakAnak();
+     varIbu2->cetakAnak(); // Print list of children for each ibu
+
+    delete varIbu;
+    delete varIbu2;
