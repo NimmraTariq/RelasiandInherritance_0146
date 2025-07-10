@@ -22,3 +22,16 @@ public:
 class pelajar : public orang {
 public:
     string sekolah;
+     pelajar(string pNama, string pSekolah) : orang(pNama), sekolah(pSekolah) { // Inherit constructor from parent class and initialize new attribute
+        cout << "pelajar dibuat\n" << endl;
+    }
+    ~pelajar() {
+        cout << "pelajar dihapus\n" << endl;
+    }
+
+    string perkenalan() {
+        return "Hallo, nama saya " + nama + " dari sekolah " + sekolah + "\n\n";
+    }
+};
+
+int main() {
