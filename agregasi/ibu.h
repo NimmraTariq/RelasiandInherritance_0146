@@ -23,3 +23,17 @@ public :
 
 void ibu::tambahAnak(anak *pAnak)
 {
+     daftar_anak.push_back(pAnak); // Add anak pointer to the daftar_anak vector
+}
+
+void ibu::cetakAnak()
+{
+    cout << "Daftar Anak dari Ibu \"" << this->nama << " \":";
+    for (auto &a : daftar_anak)
+    {
+        cout << a->nama << " \n ";
+    }
+    cout << endl;
+}
+
+#endif
