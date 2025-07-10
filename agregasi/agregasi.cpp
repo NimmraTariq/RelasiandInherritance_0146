@@ -17,3 +17,6 @@ int main()
     varIbu->tambahAnak (varAnak1);
      varIbu->tambahAnak (varAnak2); // Add anak objects to ibu 'dini'
     varIbu2->tambahAnak (varAnak3);
+     varIbu2->tambahAnak (varAnak1); // Demonstrate one child can have multiple mothers
+
+    varIbu->cetakAnak();
