@@ -9,3 +9,8 @@ public:
         cout << "jantung dihidupkan\n"; // Print message when jantung object is created
     }
     ~jantung() {
+        cout << "jantung dimatikan\n"; // Print message when jantung object is destroyed
+    }
+};
+
+#endif
