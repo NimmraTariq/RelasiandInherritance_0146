@@ -37,3 +37,12 @@ public:
 
 void pasien::tambahDokter(dokter* pDokter) {
     daftar_dokter.push_back(pDokter);
+    pDokter->tambahPasien(this); // Ensure mutual association between patient and doctor
+}
+
+void dokter::tambahPasien(pasien* pPasien) {
+    daftar_pasien.push_back(pPasien);
+}
+
+void pasien::cetakDokter() {
+    cout << "Daftar Dokter yang menangani pasien \"" << this->nama << "\":\n";
