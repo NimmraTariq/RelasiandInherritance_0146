@@ -12,3 +12,9 @@ public :
     }
 
     ~anak()
+     {
+         cout << "Anak \" " << nama << "\"  tida ada \n"; // Print message when anak object is destroyed
+    }
+};
+
+#endif
