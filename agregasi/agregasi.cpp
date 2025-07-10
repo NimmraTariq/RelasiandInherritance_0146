@@ -24,3 +24,11 @@ int main()
 
     delete varIbu;
     delete varIbu2;
+    delete varAnak1; // Clean up dynamically allocated memory to avoid memory leaks
+    delete varAnak2;
+    delete varAnak3;
+
+    system ("pause");
+     
+    return 0;
+}
